@@ -1,0 +1,52 @@
+  <!-- Created by Kushal Agarwal -->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="description" content="Connect 4 [Game]">
+        <meta name="keywords" content="sololearn connect4 game">
+        <meta name="author" content="Kushal Agarwal">
+        <meta name="copyright" content="Kushal Agarwal">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Connect 4 [Game]</title>
+       <script src="js/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div id="title">
+                CONNECT 4
+            </div>
+            <div id="winner"></div>
+            <button id="b_again">PLAY AGAIN</button>
+            <table id="game_board" cellpadding="0" cellspacing="0"></table> 
+            <div id="loading">COMPUTER IS THINKING...</div>
+            <div id="info">
+                Connect four of your checkers in a row while preventing the computer from doing the same.<br><br>
+                You play with the red checkers and play first. The computer will play the yellow checkers.<br><br>
+                Tap on a column to drop a checker on that column.<br><br>
+                <center>
+                    <b>Select difficulty</b><br>
+                    <select id="difficulty" autocomplete="off">
+                        <option value="1">Very Easy</option>
+                        <option value="2">Basic</option>
+                        <option value="3">Normal</option>
+                        <option value="4" selected="selected">Easy</option>
+                        <option value="5">Moderate</option>
+                        <option value="6">Hard</option>
+                        <option value="7">Extreme</option>
+                        <option value="8">Impossible</option>
+                    </select>
+                    <br>
+                    <button id="b_start">PLAY</button>
+                </center>
+            </div>
+        </div>
+   <link rel="stylesheet"href="css/four.css">
+
+ <script type="text/javascript"src="js/four.js">
+
+</script>  </body>
+</html>

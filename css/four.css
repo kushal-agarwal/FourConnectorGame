@@ -1,0 +1,187 @@
+ 
+body {
+    font-family:'Baloo Bhaijaan', cursive;
+    background-image:url(" ");
+    color:#333333;
+    margin:0;
+}
+html {
+    -webkit-tap-highlight-color:transparent;
+    -moz-tap-highlight-color:transparent;
+    highlight-color:transparent;
+}
+* {
+    outline: none;
+}
+#main {
+    position:relative;
+    width:350px;
+    height:460px;
+    margin:auto;
+}
+#title {
+    position:absolute;
+    top:-5px;
+    left:0;
+    width:100%;
+    text-align:center;
+    font-size:35px;
+    font-family:'Baloo Bhaijaan', cursive;
+    z-index:105;
+}
+#game_board {
+    position:absolute;
+    top:100px;
+    left:0;
+    width:350px;
+    height:300px;
+}
+#coinfeld {
+    position:relative;
+    width:100%;
+    height:55px;
+}
+#game_board td {
+    border:0;
+    position:relative;
+    width:50px;
+    height:50px;
+    cursor:pointer;
+}
+#checker {
+    position:absolute;
+    display:none;
+    left:0;
+    top:0;
+    width:50px;
+    height:50px;
+}
+#game_board td {
+    background-image:url(https://image.ibb.co/epujwd/connect4.png);
+}
+.checker {
+    width:50px;
+    height:50px;
+    cursor:default;
+}
+#game_board tr {
+    height:50px;
+}
+#game_board .human-checker,.human-checker {
+    background-color:red;
+}
+#game_board .cpu-checker,.cpu-checker {
+    background-color:yellow;
+}
+#game_board .win {
+    animation:animationFrames 1s infinite;
+    -webkit-animation:animationFrames 1s infinite;
+    -moz-animation:animationFrames 1s infinite;
+    -o-animation:animationFrames 1s infinite;
+    -ms-animation:animationFrames 1s infinite;
+}
+@keyframes animationFrames{
+    50% {
+        opacity:0.6;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes animationFrames{
+    50% {
+        opacity:0.6;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-webkit-keyframes animationFrames {
+    50% {
+        opacity:0.6;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes animationFrames {
+    50% {
+        opacity:0.6;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-ms-keyframes animationFrames {
+    50% {
+        opacity:0.6;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#loading {
+    font-family:arial, helvetica;
+    position:absolute;
+    top:45px;
+    left:10px;
+    width:326px;
+    font-size:20px;
+    font-weight:bold;
+    text-align:center;
+    background:#eee218;
+    border:2px solid #585635;
+    border-radius:20px;
+    color:#585635;
+    padding:6px 0;
+    display:none;
+}
+#info {
+    position:absolute;
+    top:0;
+    left:0;
+    width:310px;
+    height:380px;
+    padding:60px 20px 20px 20px;
+    font-size:19px;
+    z-index:104;
+    font-family:arial, helvetica;
+    background:#ffffff;
+}
+button {
+    position:relative;
+    font-size:18px;
+    font-weight:bold;
+    padding:7px 20px;
+    border:2px solid #202020;
+    color:#202020;
+    background-color:#f0f0f0;
+    cursor:pointer;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    margin-top:10px;
+}
+select {
+    font-size:19px;
+    border-radius:15px;
+    padding:4px;
+}
+#winner {
+    position:absolute;
+    top:30px;
+    left:0;
+    width:360px;
+    text-align:center;
+    font-size:27px;
+    z-index:105;
+    display:none;
+}
+#b_again {
+    position:absolute;
+    width:180px;
+    top:55px;
+    left:90px;
+    z-index:200;
+    display:none;
+}
